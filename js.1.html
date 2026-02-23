@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Onboarding Quiz</title>
+    <link rel="stylesheet" href="Jscss.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Welcome Screen -->
+    <section id="welcomeScreen" class="active">
+        <h1>Welcome to TechNova Onboarding Quiz</h1>
+        <p>Test your knowledge about company values, benefits and policies.</p>
+        <button id="startBtn">Start Quiz</button>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="quizScreen" class="hidden">
+        <div class="quiz-header">
+            <h2 id="questionText"></h2>
+            <p id="scoreDisplay">Score: 0</p>
+        </div>
+
+        <div id="optionsContainer"></div>
+
+        <div id="feedback" class="feedback"></div>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="resultScreen" class="hidden">
+        <h2 id="resultText"></h2>
+        <p id="customMessage"></p>
+        <button id="retakeBtn">Retake Quiz</button>
+    </section>
+
+</div>
+
+<script src="jv.js"></script>
+</body>
+</html>
